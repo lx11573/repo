@@ -1,6 +1,11 @@
 {
+  "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@8.10.4",
+  "packageManager": "pnpm@8.10.5",
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.10.7:10080/lvming/gxs-app.git"
+  },
   "scripts": {
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
@@ -40,10 +45,12 @@
     "up": "npx taze major --exclude pinia,/@dcloudio/ -wir && npx @dcloudio/uvm@latest",
     "lint": "eslint .",
     "test": "vitest",
+    "semantic-release": "semantic-release --no-ci",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "npx simple-git-hooks"
   },
   "dependencies": {
+    "@climblee/uv-ui": "^1.1.17",
     "@dcloudio/uni-app": "3.0.0-3090620231104002",
     "@dcloudio/uni-app-plus": "3.0.0-3090620231104002",
     "@dcloudio/uni-components": "3.0.0-3090620231104002",
@@ -58,37 +65,48 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-3090620231104002",
     "@dcloudio/uni-mp-xhs": "3.0.0-3090620231104002",
     "@dcloudio/uni-quickapp-webview": "3.0.0-3090620231104002",
-    "pinia": "^2.0.36",
-    "vue": "^3.3.8",
-    "vue-i18n": "^9.6.5"
+    "@vueuse/core": "^10.6.1",
+    "pinia": "~2.0.36",
+    "vue": "^3.3.8"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
     "@dcloudio/types": "^3.4.1",
     "@dcloudio/uni-automator": "3.0.0-3090620231104002",
     "@dcloudio/uni-cli-shared": "3.0.0-3090620231104002",
     "@dcloudio/uni-stacktracey": "3.0.0-3090620231104002",
     "@dcloudio/vite-plugin-uni": "3.0.0-3090620231104002",
     "@iconify-json/carbon": "^1.1.21",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^11.0.0",
     "@uni-helper/eslint-config": "^0.0.5",
     "@uni-helper/uni-app-types": "^0.5.12",
     "@uni-helper/unocss-preset-uni": "^0.2.4",
     "@uni-helper/vite-plugin-uni-layouts": "^0.1.6",
     "@uni-helper/vite-plugin-uni-pages": "^0.2.12",
-    "@unocss/eslint-config": "^0.57.3",
+    "@unocss/eslint-config": "^0.57.4",
+    "@vitejs/plugin-vue": "^4.4.1",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
     "@vue-macros/reactivity-transform": "^0.3.23",
-    "@vue/runtime-core": "^3.2.45",
+    "@vue-macros/volar": "^0.17.2",
     "@vue/test-utils": "^2.4.1",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cmyr-config": "^2.1.1",
+    "cz-customizable": "^6.9.2",
     "eslint": "^8.53.0",
     "lint-staged": "^15.1.0",
-    "pnpm": "^8.10.4",
+    "pnpm": "^8.10.5",
     "sass": "^1.69.5",
+    "semantic-release": "19.0.5",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.2.2",
-    "unocss": "^0.57.3",
+    "unocss": "^0.57.4",
     "unplugin-auto-import": "^0.16.7",
     "unplugin-vue-components": "^0.25.2",
-    "vite": "4.0.3",
-    "vite-plugin-vue-devtools": "^0.5.1",
+    "unplugin-vue-macros": "^2.6.2",
+    "vite": "4.5.0",
+    "vite-plugin-vue-devtools": "1.0.0-rc.5",
     "vitest": "^0.34.6",
     "vue-tsc": "^1.8.22"
   },
@@ -96,6 +114,14 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "src/**/*.{ts, jsx, tsx, js, vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
   }
 }

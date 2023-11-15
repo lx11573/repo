@@ -5,17 +5,17 @@ const name = $ref('')
 <template>
   <div>
     <TheLogo />
-
     <div py-4 />
-
     <TheInput
-      v-model:value="name"
+      ::value="name"
       placeholder="What's your name?"
     />
-
+    <div>
+      name: {{ name }}
+    </div>
     <div>
       <button
-        m-3 text-sm btn
+        btn m-3 text-sm
         :disabled="!name"
         @click="router.push(`/pages/hi?name=${name}`)"
       >
@@ -26,5 +26,6 @@ const name = $ref('')
 </template>
 
 <route lang="yaml">
-layout: home
-</route>
+  style:
+    navigationBarTitleText: '1123'
+  </route>

@@ -14,7 +14,7 @@
     "types": [
       "@dcloudio/types",
       "@uni-helper/uni-app-types",
-      "@vue-macros/reactivity-transform/macros-global"
+      "unplugin-vue-macros/macros-global"
     ],
     "allowJs": true,
     "strict": true,
@@ -25,6 +25,7 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
   },
+
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts",
@@ -36,6 +37,21 @@
 
   // uni-app Component type prompt
   "vueCompilerOptions": {
-    "nativeTags": ["block", "component", "template", "slot"]
+    "target": 3,
+    "nativeTags": ["block", "component", "template", "slot"],
+    "plugins": [
+      "@vue-macros/volar/define-options",
+      "@vue-macros/volar/define-models",
+      "@vue-macros/volar/define-props",
+      "@vue-macros/volar/define-props-refs",
+      "@vue-macros/volar/short-vmodel",
+      "@vue-macros/volar/define-slots",
+      "@vue-macros/volar/jsx-directive"
+    ],
+    "vueMacros": {
+      "shortVmodel": {
+        "prefix": "::"
+      }
+    }
   }
 }

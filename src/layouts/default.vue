@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="app" :class="{
-      dark: isDark,
-    }"
-  >
+  <div class="app" :class="{ dark: isDark }">
     <main
       p="x-4 y-10"
       font-sans text="center"
@@ -11,9 +7,15 @@
     >
       <slot />
       <TheFooter />
-      <div mx-auto mt-4 text-center text-sm opacity-50>
+      <div mx-auto mt-4 text-center text-sm opacity-50 class="test-txt">
         [Default Layout]
       </div>
     </main>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.test-txt {
+  color: $uni-color-primary;
+}
+</style>

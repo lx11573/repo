@@ -1,10 +1,14 @@
-<template>
-  <div>
-    <h1 mb-2>
-      Sub Page
-    </h1>
-    <p text-sm italic op75>
-      <em>Sub Page Content</em>
-    </p>
-  </div>
-</template>
+<script setup lang="tsx">
+defineOptions({ name: 'SubPage' })
+let msg = $ref('新的页面')
+function handleClick() {
+  msg = Math.random().toString()
+}
+defineRender(() => {
+  return (
+    <div onClick={handleClick}>
+      <div>{msg}</div>
+    </div>
+  )
+})
+</script>
