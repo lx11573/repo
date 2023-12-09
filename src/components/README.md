@@ -9,15 +9,3 @@
 它只会打包您使用的图标。可以查看 [`unplugin-icons`](https://github.com/antfu/unplugin-icons) 了解更多详情。
 
 <br />
-
-## ----- English Document -----
-
-## Components
-
-Components in this dir will be auto-registered and on-demand, powered by [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components).
-
-### Icons
-
-You can use icons from almost any icon sets by the power of [Iconify](https://iconify.design/). Use [Icones](https://icones.js.org/) to view the set of available ICONS and their class names
-
-It will only bundle the icons you use. Check out [`unplugin-icons`](https://github.com/antfu/unplugin-icons) for more details.

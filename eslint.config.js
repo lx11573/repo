@@ -8,6 +8,9 @@ module.exports = uni(
         'vue/component-name-in-template-casing': ['error', 'PascalCase'],
       },
     },
+    rules: {
+      '@typescript-eslint/consistent-type-definitions': 'error',
+    },
   },
   unocss.configs.flat,
 )

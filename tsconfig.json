@@ -31,7 +31,8 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "./auto-imports.d.ts"
+    "./auto-imports.d.ts",
+    "@dcloudio/types", "@uni-helper/uni-app-types", "@uni-helper/uni-ui-types"
   ],
   "exclude": ["dist", "node_modules"],
 

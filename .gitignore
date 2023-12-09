@@ -22,3 +22,5 @@ dist
 
 # pages config
 pages.json
+components.d.ts
+auto-imports.d.ts
