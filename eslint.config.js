@@ -3,13 +3,24 @@ const unocss = require('@unocss/eslint-plugin')
 
 module.exports = uni(
   {
+    stylistic: {
+      useTabs: true,
+    },
     overrides: {
       uni: {
         'vue/component-name-in-template-casing': ['error', 'PascalCase'],
       },
+      javascript: {
+        'no-console': 'off',
+        'prefer-promise-reject-errors': 'off',
+        'style/no-tabs': 'off',
+      },
+      typescript: {
+        'ts/consistent-type-definitions': 'off',
+      },
     },
     rules: {
-      '@typescript-eslint/consistent-type-definitions': 'error',
+      'style/no-tabs': 'off',
     },
   },
   unocss.configs.flat,

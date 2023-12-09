@@ -1,5 +1,11 @@
 <script setup lang="ts">
-/* At least one <template> or <script> is required in a single file component. */
+import { checkUpdate, listenerNetworkStatus } from '@/utils'
+
+onLaunch(() => {
+  plus.screen.lockOrientation('portrait-primary')
+  listenerNetworkStatus()
+  checkUpdate()
+})
 </script>
 
 <style lang="scss">

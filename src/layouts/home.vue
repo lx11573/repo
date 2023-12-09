@@ -1,3 +1,9 @@
+<script>
+export default defineComponent({
+  name: 'LayoutHome',
+})
+</script>
+
 <template>
   <div
     class="app" :class="{
@@ -17,8 +23,3 @@
     </main>
   </div>
 </template>
-<script>
-	export default defineComponent({
-		name: 'LayoutHome'
-	})
-</script>

@@ -1,13 +1,9 @@
 {
-  "files.associations": {
-    "*.css": "postcss"
-  },
-
   // Enable the ESlint flat config support
   "eslint.experimental.useFlatConfig": true,
 
   // Disable the default formatter
-  "prettier.enable": true,
+  "prettier.enable": false,
   "editor.formatOnSave": true,
 
   // Auto fix
@@ -41,8 +37,6 @@
     "vue",
     "html",
     "markdown",
-    "json",
-    "jsonc",
     "yaml"
   ],
 

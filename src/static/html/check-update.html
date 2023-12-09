@@ -1,0 +1,52 @@
+<!--
+ * @Author: lyu
+ * @Date: 2021-04-06 15:57:13
+ * @LastEditTime: 2021-05-08 14:46:54
+ * @LastEditors: lyu
+ * @FilePath: /gxs-app/src/hybrid/html/no-network.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <!-- <title>版本更新</title> -->
+  <link href="../css/check-update.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="mask flex-center">
+		<div class="content button-radius">
+			<div class="content-top">
+				<text class="content-top-text">版本更新</text>
+				<img class="content-top" style="top: 0"  src="../images/bg_top.png" />
+			</div>
+			<div class="content-body button-radius">
+				<div>
+          <div class="body">
+              <text class="box-des">
+                最新版本来啦，赶快更新看看吧
+              </text>
+          </div>
+        </div>
+				<div class="footer flex-center">
+          <button class="content-button" style="border: none;color: #fff;" plain onClick="handleClose()">
+            安装完毕，点击重启
+          </button>
+				</div>
+			</div>
+
+			<!-- <img class="close-img" src="./images/app_update_close.png" /> -->
+		</div>
+	</div>
+
+  <script>
+    function handleClose() {
+      const ws = plus.webview.currentWebview()
+      plus.webview.close(ws)
+    }
+  </script>
+</body>
+
+</html>

@@ -11,6 +11,7 @@
         [Default Layout]
       </div>
     </main>
+    <UpgradeCenter />
   </div>
 </template>
 

@@ -18,6 +18,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '~/': `${resolve(__dirname, 'src')}/`,
+      '@/': `${resolve(__dirname, 'src')}/`,
     },
   },
   plugins: [
@@ -54,7 +55,7 @@ export default defineConfig({
         'vue',
         'uni-app',
       ],
-      dts: true,
+      dts: 'src/types/auto-imports.d.ts',
       dirs: [
         './src/composables',
       ],
@@ -67,7 +68,7 @@ export default defineConfig({
      * @see https://github.com/antfu/vite-plugin-components
      */
     Components({
-      dts: 'src/components.d.ts',
+      dts: 'src/types/components.d.ts',
     }),
 
     /**
