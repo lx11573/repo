@@ -1,30 +1,53 @@
 {
   // Enable the ESlint flat config support
   "eslint.experimental.useFlatConfig": true,
-
   // Disable the default formatter
   "prettier.enable": false,
   "editor.formatOnSave": true,
-
   // Auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
-
   // Silent the stylistic rules in you IDE, but still auto fix them
   "eslint.rules.customizations": [
-    { "rule": "style/*", "severity": "off" },
-    { "rule": "*-indent", "severity": "off" },
-    { "rule": "*-spacing", "severity": "off" },
-    { "rule": "*-spaces", "severity": "off" },
-    { "rule": "*-order", "severity": "off" },
-    { "rule": "*-dangle", "severity": "off" },
-    { "rule": "*-newline", "severity": "off" },
-    { "rule": "*quotes", "severity": "off" },
-    { "rule": "*semi", "severity": "off" }
+    {
+      "rule": "style/*",
+      "severity": "off"
+    },
+    {
+      "rule": "*-indent",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spacing",
+      "severity": "off"
+    },
+    {
+      "rule": "*-spaces",
+      "severity": "off"
+    },
+    {
+      "rule": "*-order",
+      "severity": "off"
+    },
+    {
+      "rule": "*-dangle",
+      "severity": "off"
+    },
+    {
+      "rule": "*-newline",
+      "severity": "off"
+    },
+    {
+      "rule": "*quotes",
+      "severity": "off"
+    },
+    {
+      "rule": "*semi",
+      "severity": "off"
+    }
   ],
-
   // The following is optional.
   // It's better to put under project setting `.vscode/settings.json`
   // to avoid conflicts with working with different eslint configs
@@ -39,7 +62,6 @@
     "markdown",
     "yaml"
   ],
-
   /**
    * 解决 unocss @apply 警告问题
    * @see https://github.com/tailwindlabs/tailwindcss/discussions/5258#discussioncomment-1979394
@@ -47,7 +69,9 @@
   "scss.lint.unknownAtRules": "ignore",
   "cSpell.words": [
     "autoscan",
+    "climblee",
     "composables",
+    "dcloudio",
     "easycom",
     "Iconify",
     "Pinia",

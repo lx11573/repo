@@ -27,7 +27,8 @@ export default defineConfig({
      * @see https://github.com/uni-helper/vite-plugin-uni-pages
      */
     UniPages({
-      routeBlockLang: 'yaml',
+      dts: 'src/types/ignore/uni-pages.d.ts',
+      exclude: ['**/components/*.vue'],
       subPackages: [
         'src/pages-sub',
       ],
@@ -55,7 +56,7 @@ export default defineConfig({
         'vue',
         'uni-app',
       ],
-      dts: 'src/types/auto-imports.d.ts',
+      dts: 'src/types/ignore/auto-imports.d.ts',
       dirs: [
         './src/composables',
       ],
@@ -68,7 +69,7 @@ export default defineConfig({
      * @see https://github.com/antfu/vite-plugin-components
      */
     Components({
-      dts: 'src/types/components.d.ts',
+      dts: 'src/types/ignore/components.d.ts',
     }),
 
     /**
