@@ -1,7 +1,7 @@
 import type { UniUpgradeCenterResult } from './check-version'
 import callCheckVersion from './check-version'
 
-import { useCounterStore } from '@/store/counter'
+import { useBaseStore } from '@/store'
 
 // 推荐再App.vue中使用
 const PACKAGE_INFO_KEY = '__package_info__'
@@ -32,8 +32,8 @@ export function checkUpdate(): Promise<UniUpgradeCenterResult> {
          * 官方适配的升级弹窗，可自行替换资源适配UI风格
          */
         uni.setStorageSync(PACKAGE_INFO_KEY, uniUpgradeCenterResult)
-        const counter = useCounterStore()
-        counter.setVisible()
+        const baseStore = useBaseStore()
+        baseStore.setShowUpgrade(true)
         // console.log('show')
         // router.push(`/pages/upgrade-center/upgrade-center?local_storage_key=${PACKAGE_INFO_KEY}`)
         // uni.navigateTo({

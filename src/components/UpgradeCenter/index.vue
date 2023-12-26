@@ -1,13 +1,13 @@
 <script setup>
-import { useCounterStore } from '../../store/counter'
+import { useBaseStore } from '~/store'
 
 defineOptions({ name: 'UpgradeCenter' })
 
-const counter = useCounterStore()
+const baseStore = useBaseStore()
 </script>
 
 <template>
-	<view v-if="counter.visible" class="mask flex-center">
+	<view v-if="baseStore.showUpgrade" class="mask flex-center">
 		<view class="content botton-radius">
 			<view class="content-top">
 				<image class="content-top" style="top: 0;" width="100%" height="100%" src="@/static/images/bg_top.png" />

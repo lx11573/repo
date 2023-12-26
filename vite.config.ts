@@ -12,6 +12,7 @@ import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import VueMacros from 'unplugin-vue-macros/vite'
 import VueJsx from '@vitejs/plugin-vue-jsx'
+import AutoDecimal from 'vite-plugin-auto-decimal'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -55,6 +56,7 @@ export default defineConfig({
       imports: [
         'vue',
         'uni-app',
+        { '@/store': ['useBaseStore'] },
       ],
       dts: 'src/types/ignore/auto-imports.d.ts',
       dirs: [
@@ -91,5 +93,6 @@ export default defineConfig({
         prefix: '::',
       },
     }),
+    AutoDecimal(),
   ],
 })

@@ -21,8 +21,7 @@
     "types": [
       "@dcloudio/types",
       "@uni-helper/uni-app-types",
-      "unplugin-vue-macros/macros-global",
-      "src/types/ignore"
+      "unplugin-vue-macros/macros-global"
     ],
     "allowJs": true,
     "strict": true,

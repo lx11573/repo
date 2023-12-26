@@ -1,16 +1,11 @@
+<script setup lang="ts">
+const baseStore = useBaseStore()
+</script>
+
 <template>
   <div class="app" :class="{ dark: isDark }">
-    <main
-      p="x-4 y-10"
-      font-sans text="center"
-      color="gray-700 dark:gray-200"
-    >
-      <slot />
-      <TheFooter />
-      <div mx-auto mt-4 text-center text-sm opacity-50 class="test-txt">
-        [Default Layout]
-      </div>
-    </main>
+    <uv-empty v-if="baseStore.showEmpty" mode="car" icon="https://cdn.uviewui.com/uview/empty/car.png" />
+    <slot v-else />
     <UpgradeCenter />
   </div>
 </template>
