@@ -66,6 +66,7 @@
     "@dcloudio/uni-mp-xhs": "3.0.0-3090820231124001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-3090820231124001",
     "@vueuse/core": "^10.7.0",
+    "dayjs": "^1.11.10",
     "decimal.js-light": "^2.5.1",
     "pinia": "~2.0.33",
     "vue": "^3.3.10",

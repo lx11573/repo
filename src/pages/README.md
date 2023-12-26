@@ -19,28 +19,3 @@ import { isDark } from '../../../../composables'
 ```ts
 import { isDark } from '~/composables'
 ```
-
-<br />
-
-## ----- English Document -----
-
-## File-based Routing
-
-Routes will be auto-generated for UniAPP files in this dir with the same file structure.
-Check out [`@uni-helper/vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages) for more details.
-
-### Path Aliasing
-
-`~/` is aliased to `./src/` folder.
-
-For example, instead of having
-
-```ts
-import { isDark } from '../../../../composables'
-```
-
-now, you can use
-
-```ts
-import { isDark } from '~/composables'
-```
