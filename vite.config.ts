@@ -58,6 +58,7 @@ export default defineConfig({
         'uni-app',
         { dayjs: [['default', 'dayjs']] },
         { '@/utils': ['amtFormat', 'timeFormat'] },
+        { '@/services': [['default', 'http']] },
         { '@/store': ['useBaseStore'] },
       ],
       dts: 'src/types/ignore/auto-imports.d.ts',
