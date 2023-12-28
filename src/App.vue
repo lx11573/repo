@@ -12,4 +12,5 @@ onLaunch(() => {
 
 <style lang="scss">
 @import './styles/main.css';
+@import './styles/override';
 </style>

@@ -1,0 +1,9 @@
+.own-form {
+  & .uv-form-item__body {
+    & .uv-form-item__body__left__content__label {
+      font-size: 34rpx;
+      font-weight: 800;
+      color: #202020;
+    }
+  }
+}
