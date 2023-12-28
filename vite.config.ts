@@ -56,6 +56,7 @@ export default defineConfig({
       imports: [
         'vue',
         'uni-app',
+        { dayjs: [['default', 'dayjs']] },
         { '@/store': ['useBaseStore'] },
       ],
       dts: 'src/types/ignore/auto-imports.d.ts',

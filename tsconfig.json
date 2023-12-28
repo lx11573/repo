@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "ES2020",
     "jsx": "preserve",
     "lib": [
       "DOM",
@@ -21,7 +21,7 @@
     "types": [
       "@dcloudio/types",
       "@uni-helper/uni-app-types",
-      "unplugin-vue-macros/macros-global"
+      "unplugin-vue-macros/macros-global",
     ],
     "allowJs": true,
     "strict": true,
