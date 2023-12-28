@@ -1,9 +1,26 @@
 .own-form {
   & .uv-form-item__body {
     & .uv-form-item__body__left__content__label {
+      font-size: 32rpx;
+      font-weight: 400;
+      color: #202020;
+    }
+  }
+
+  & .uv-input__content__field-wrapper {
+    .uv-input__content__field-wrapper__field {
+      height: 96rpx;
+    }
+  }
+}
+
+.own-form-bold {
+  & .uv-form-item__body {
+    & .uv-form-item__body__left__content__label {
       font-size: 34rpx;
       font-weight: 500;
       color: #202020;
     }
   }
+
 }
