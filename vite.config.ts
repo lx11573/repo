@@ -57,6 +57,7 @@ export default defineConfig({
         'vue',
         'uni-app',
         { dayjs: [['default', 'dayjs']] },
+        { '@/utils': ['amtFormat', 'timeFormat'] },
         { '@/store': ['useBaseStore'] },
       ],
       dts: 'src/types/ignore/auto-imports.d.ts',

@@ -69,11 +69,13 @@
     "@vueuse/core": "^10.7.0",
     "dayjs": "^1.11.10",
     "decimal.js-light": "^2.5.1",
+    "lodash-es": "^4.17.21",
     "lru-cache-api-notice": "^0.1.1",
     "pinia": "~2.0.33",
     "qs": "^6.11.2",
     "vue": "^3.3.10",
-    "vue-i18n": "^9.8.0"
+    "vue-i18n": "^9.8.0",
+    "xe-utils-es": "^0.0.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.8.1",
