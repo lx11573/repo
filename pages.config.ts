@@ -2,7 +2,6 @@ import { defineUniPages } from '@uni-helper/vite-plugin-uni-pages'
 
 export default defineUniPages({
   pages: [],
-	homePage: '/pages/index',
   globalStyle: {
     navigationBarTitleText: 'gxs-app',
     navigationBarBackgroundColor: '@navBgColor',

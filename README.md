@@ -4,7 +4,7 @@
 
 - 📦 [组件自动化加载](https://github.com/Ares-Chang/uni-vitesse/blob/master/src/components) - `Vue` 的按需组件自动导入
 
-- 🚗 [加减乘除精确计算](https://github.com/Ares-Chang/uni-vitesse/blob/master/src/components) - `Decimal` 自动转换
+- 🚗 [加减乘除精确计算](http://192.168.10.81:8888/-/web/detail/vite-plugin-auto-decimal) - `Decimal` 自动转换
 
 - 📑 [布局系统](https://github.com/Ares-Chang/uni-vitesse/tree/master/src/layouts) - `Vite` 下 `uni-app` 的可定制布局框架
 
