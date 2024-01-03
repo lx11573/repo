@@ -17,7 +17,7 @@ onLoad((query) => {
   <view>
     <Flow :active="REGISTER_STEP.F" :is-person="isPerson" />
     <view class="mt-136rpx flex-center-justify flex-col bg-white">
-      <div i-local-register-finished class="h-330rpx w-467rpx" />
+      <div i-register-register-finished class="h-330rpx w-467rpx" />
       <text class="mt-40rpx text-32rpx text-[#000]">
         恭喜，您已成功提交注册及开户申请
       </text>

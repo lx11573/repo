@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { REGISTER_STEP } from '../enum'
 import type { UploadProps } from '../types'
-import Flow from './flow.vue'
-import IdcardUpload from '.idcard-upload.vue'
+import Flow from './Flow.vue'
+import IdcardUpload from './IdcardUpload.vue'
 
 defineOptions({ name: 'RegisterUpload' })
 const props = defineProps<UploadProps>()

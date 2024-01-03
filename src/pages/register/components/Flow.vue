@@ -45,7 +45,7 @@ function isActive(step: number) {
           {{ step.title }}
         </text>
       </view>
-      <div v-if="steps.length - 1 !== index" i-local:register_arrow mx-7rpx
+      <div v-if="steps.length - 1 !== index" i-register:register_arrow mx-7rpx
            :class="[isActive(index) ? 'text-primary' : 'text-[#9f9f9f]']"
       />
     </template>
