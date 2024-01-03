@@ -4,7 +4,7 @@
     "bgColorBottom": "#efefef",
     "bgColorTop": "#eeeeee",
     "bgTxtStyle": "light",
-    "navBgColor": "#f8f8f8",
+    "navBgColor": "#fff",
     "navTxtStyle": "black"
   },
   "dark": {
@@ -14,5 +14,10 @@
     "bgTxtStyle": "dark",
     "navBgColor": "#292929",
     "navTxtStyle": "white"
+  },
+  "theme": {
+    "primary": "#408FFF",
+    "disabled": "#c0c4cc",
+    "subText": "#9f9f9f"
   }
 }

@@ -21,6 +21,8 @@ module.exports = uni(
     },
     rules: {
       'style/no-tabs': 'off',
+      'vue/first-attribute-linebreak': 'off',
+      'no-restricted-syntax': 'off',
     },
   },
   unocss.configs.flat,

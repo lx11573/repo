@@ -15,6 +15,7 @@ export default defineConfig({
       warn: true,
       collections: {
         local: FileSystemIconLoader('./src/static/icons'),
+        register: FileSystemIconLoader('./src/static/icons/register'),
       },
     }),
     /**
@@ -34,6 +35,10 @@ export default defineConfig({
    */
   shortcuts: [
     ['flex-center', 'flex items-center'],
+    ['text-primary', 'text-[#408FFF]'],
+    ['text-error', 'text-[#ff3939]'],
+    ['text-danger', 'text-error'],
+    ['flex-center-justify', 'flex items-center justify-center'],
     ['ellipsis', 'whitespace-nowrap overflow-hidden text-ellipsis'],
   ],
   transformers: [

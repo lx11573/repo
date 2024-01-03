@@ -92,6 +92,10 @@ export default defineConfig({
       defineOptions: true,
       defineSlots: true,
       shortEmits: true,
+      betterDefine: true,
+      setupBlock: false,
+      setupSFC: false,
+      setupComponent: false,
       shortVmodel: {
         prefix: '::',
       },
