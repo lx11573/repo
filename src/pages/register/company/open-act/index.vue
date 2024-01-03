@@ -133,27 +133,19 @@ function handleNext() {
         </uv-form-item>
         <uv-form-item prop="bankPlace" border-bottom>
           <template #label>
-            <view class="uv-form-item__body__left text-32rpx">
-              <view class="uv-form-item__body__left__content w-100px">
-                <view class="uv-form-item__body__left__content__label">
-                  <text>开户行</text><br>
-                  <text>所在地</text>
-                </view>
-              </view>
-            </view>
+            <FormItemLabel own-class="w-100px">
+              <text>开户行</text><br>
+              <text>所在地</text>
+            </FormItemLabel>
           </template>
           <uv-input v-model="actInfo.bankPlace" disabled disabled-color="#ffffff" placeholder="请选择开户行所在地" border="none" />
         </uv-form-item>
         <uv-form-item prop="subBranch" border-bottom>
           <template #label>
-            <view class="uv-form-item__body__left text-32rpx">
-              <view class="uv-form-item__body__left__content w-100px">
-                <view class="uv-form-item__body__left__content__label">
-                  <text>开户行</text><br>
-                  <text>支行名称</text>
-                </view>
-              </view>
-            </view>
+            <FormItemLabel own-class="w-100px">
+              <text>开户行</text><br>
+              <text>支行名称</text>
+            </FormItemLabel>
           </template>
           <uv-input v-model="actInfo.subBranch" disabled disabled-color="#ffffff" placeholder="请选择支行名称" border="none" />
         </uv-form-item>
