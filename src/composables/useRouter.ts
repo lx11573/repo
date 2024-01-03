@@ -45,7 +45,7 @@ export declare type RouterLocationMixtureRaw< T, K extends keyof T = keyof T > =
  * Router 跳转参数
  */
 export declare type RouterLocationRaw =
-  string
+  RoutePath
   | RouterLocationMixtureRaw<
       RouteLocationOptions & LocationUniAppParams,
       RouterLocationRequiredOnly
@@ -58,7 +58,7 @@ export declare interface RouteLocationOptions {
   /**
    * 目标路由地址
    */
-  path: string
+  path: RoutePath
   /**
    * 路由参数
    */
@@ -84,9 +84,10 @@ export declare type LocationQueryRaw = Record<string, string | number | undefine
  * @see https://uniapp.dcloud.net.cn/api/router.html
  */
 export declare interface LocationUniAppParams
-  extends Partial<UniNamespace.NavigateToOptions>,
-  Partial<UniNamespace.RedirectToOptions>,
-  Partial<UniNamespace.SwitchTabOptions> {
+  extends Omit<Partial<UniNamespace.NavigateToOptions>, 'url'>,
+  Omit<Partial<UniNamespace.RedirectToOptions>, 'url'>,
+  Omit<Partial<UniNamespace.SwitchTabOptions>, 'url'> {
+  url?: RoutePath
   success?: (result: UniNamespace.NavigateToSuccessOptions | any) => void
 }
 

@@ -7,23 +7,23 @@ const baseStore = useBaseStore()
 </script>
 
 <template>
-	<view v-if="baseStore.showUpgrade" class="mask flex-center">
-		<view class="content botton-radius">
-			<view class="content-top">
-				<image class="content-top" style="top: 0;" width="100%" height="100%" src="@/static/images/bg_top.png" />
-			</view>
-			<view class="content-header" />
-			<view class="content-body">
-				<view class="title" />
-				<view class="body" />
-				<view class="flex-center footer">
-					<button class="content-button" style="border: none;color: #fff;" plain>
-						安装完毕，点击重启
-					</button>
-				</view>
-			</view>
-		</view>
-	</view>
+  <view v-if="baseStore.showUpgrade" class="mask flex-center">
+    <view class="content botton-radius">
+      <view class="content-top">
+        <image class="content-top" style="top: 0;" width="100%" height="100%" src="@/static/images/bg_top.png" />
+      </view>
+      <view class="content-header" />
+      <view class="content-body">
+        <view class="title" />
+        <view class="body" />
+        <view class="footer flex-center">
+          <button class="content-button" style="border: none;color: #fff;" plain>
+            安装完毕，点击重启
+          </button>
+        </view>
+      </view>
+    </view>
+  </view>
 </template>
 
 <style scoped>
