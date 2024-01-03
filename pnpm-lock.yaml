@@ -134,7 +134,7 @@ devDependencies:
     specifier: ^0.1.7
     version: 0.1.7(typescript@5.3.3)(vitest@1.1.1)
   '@uni-helper/vite-plugin-uni-pages':
-    specifier: ^0.2.12
+    specifier: ^0.2.13
     version: 0.2.13(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
   '@unocss/eslint-config':
     specifier: ^0.58.2
