@@ -40,20 +40,5 @@
    * @see https://github.com/tailwindlabs/tailwindcss/discussions/5258#discussioncomment-1979394
    */
   "scss.lint.unknownAtRules": "ignore",
-  "cSpell.words": [
-    "authcode",
-    "autoscan",
-    "bankname",
-    "climblee",
-    "composables",
-    "dcloudio",
-    "easycom",
-    "Iconify",
-    "idcard",
-    "Indexs",
-    "Pinia",
-    "tabbar",
-    "Unocss",
-    "unplugin"
-  ]
+ 
 }

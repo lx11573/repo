@@ -10,9 +10,9 @@ import Components from 'unplugin-vue-components/vite'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import VueDevTools from 'vite-plugin-vue-devtools'
-import VueMacros from 'unplugin-vue-macros/vite'
 import VueJsx from '@vitejs/plugin-vue-jsx'
-import AutoDecimal from 'vite-plugin-auto-decimal'
+
+// import AutoDecimal from 'vite-plugin-auto-decimal'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -85,21 +85,6 @@ export default defineConfig({
 
     uni(),
 
-    VueMacros({
-      plugins: {
-        vueJsx: VueJsx(),
-      },
-      defineOptions: true,
-      defineSlots: true,
-      shortEmits: true,
-      betterDefine: true,
-      setupBlock: false,
-      setupSFC: false,
-      setupComponent: false,
-      shortVmodel: {
-        prefix: '::',
-      },
-    }),
-    AutoDecimal(),
+    // AutoDecimal(),
   ],
 })

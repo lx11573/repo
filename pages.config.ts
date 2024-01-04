@@ -14,10 +14,4 @@ export default defineUniPages({
     //   titleNView: false, // 移除 H5、APP 顶部导航
     // },
   },
-  easycom: {
-    autoscan: true,
-    custom: {
-      '^uv-(.*)': '@climblee/uv-ui/components/uv-$1/uv-$1.vue',
-    },
-  },
 })

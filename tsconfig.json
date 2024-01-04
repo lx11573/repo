@@ -21,7 +21,6 @@
     "types": [
       "@dcloudio/types",
       "@uni-helper/uni-app-types",
-      "unplugin-vue-macros/macros-global",
     ],
     "allowJs": true,
     "strict": true,
@@ -50,20 +49,6 @@
       "component",
       "template",
       "slot"
-    ],
-    "plugins": [
-      "@vue-macros/volar/define-options",
-      "@vue-macros/volar/define-models",
-      "@vue-macros/volar/define-props",
-      "@vue-macros/volar/define-props-refs",
-      "@vue-macros/volar/short-vmodel",
-      "@vue-macros/volar/define-slots",
-      "@vue-macros/volar/jsx-directive"
-    ],
-    "vueMacros": {
-      "shortVmodel": {
-        "prefix": "::"
-      }
-    }
+    ]
   }
 }
